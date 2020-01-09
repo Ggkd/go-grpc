@@ -5,7 +5,7 @@ import (
 	"google.golang.org/grpc"
 	"io"
 	"net"
-	"project/test/grpc_demo/proto"
+	"github.com/Ggkd/v1/proto"
 	"time"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
-	"project/test/grpc_demo/proto"
+	"github.com/Ggkd/v1/proto"
 )
 
 func main() {

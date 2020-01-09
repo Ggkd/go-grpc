@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"google.golang.org/grpc"
 	"io"
-	"project/test/grpc_demo/proto"
+	"github.com/Ggkd/v1/proto"
 )
 
 func main() {

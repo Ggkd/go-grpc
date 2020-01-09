@@ -10,7 +10,7 @@ import (
 	"log"
 	"net"
 	"project/test/grpc_demo/auth"
-	"project/test/grpc_demo/proto"
+	"github.com/Ggkd/v1/proto"
 	"runtime/debug"
 )
 

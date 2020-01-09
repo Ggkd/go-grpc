@@ -5,10 +5,10 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
+	"github.com/Ggkd/v1/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"io/ioutil"
-	"project/test/grpc_demo/proto"
 )
 
 func main() {
