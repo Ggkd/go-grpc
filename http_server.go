@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/credentials"
 	"io/ioutil"
 	"net/http"
-	"project/test/grpc_demo/proto"
+	"github.com/Ggkd/v1/proto"
 	"strings"
 )
 
