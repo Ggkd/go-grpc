@@ -9,7 +9,6 @@ import (
 	"google.golang.org/grpc/status"
 	"log"
 	"net"
-	"project/test/grpc_demo/auth"
 	"github.com/Ggkd/v1/proto"
 	"runtime/debug"
 )
@@ -66,12 +65,14 @@ func main() {
 	//}
 
 
+
+
 	//	 使用截取器
 
 	// 创建 gRPC Server 对象 ， 并添加截取器
 	grpcServer := grpc.NewServer(grpc_middleware.WithUnaryServerChain(LoggingInterceptor, RecoveryInterceptor))
 	// 将TestService 注册到注册中心
-	proto.RegisterTestServiceServer(grpcServer, &auth.TestService{})
+	proto.RegisterTestServiceServer(grpcServer, &TestService{})
 	// 创建listen，监听端口
 	listen, err := net.Listen("tcp", "localhost:8886")
 	if err != nil {
